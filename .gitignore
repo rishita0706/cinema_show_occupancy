@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment and local configuration
+.env
+.env.*
+!.env.example
+
+#  Jupyter
+# .ipynb_checkpoints/
+
+# MLflow local artifact storage
+# mlruns/
+# mlartifacts/
+
+# DVC cache
+.dvc/cache/
+.dvc/tmp/
+
+# Raw datasets (tracked through DVC)
+# data/**/*.csv
+
+# Build and packaging output
+build/
+dist/
+*.egg-info/
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Operating system files
+.DS_Store
+Thumbs.db
