@@ -1,0 +1,128 @@
+{
+  "leaking_column": {
+    "present": false,
+    "column": null,
+    "columns_missing_from_holdout": [],
+    "candidates": {},
+    "corr_of_every_numeric_column_with_target": {
+      "ticket_price_rs": -0.027,
+      "days_since_release": -0.02,
+      "star_rating": 0.168,
+      "show_hour": 0.157,
+      "screen_seats": -0.037,
+      "distance_to_metro_km": -0.814
+    }
+  },
+  "unit_mixup": {
+    "present": true,
+    "column": "ticket_price_rs",
+    "group_value": "Highway",
+    "factor": 100,
+    "ratios": {
+      "ticket_price_rs|City Centre": 0.678,
+      "ticket_price_rs|Highway": 93.974,
+      "ticket_price_rs|Mall": 0.719,
+      "days_since_release|City Centre": 1.0,
+      "days_since_release|Highway": 0.952,
+      "days_since_release|Mall": 1.0,
+      "star_rating|City Centre": 1.034,
+      "star_rating|Highway": 1.0,
+      "star_rating|Mall": 0.95,
+      "show_hour|City Centre": 0.938,
+      "show_hour|Highway": 1.0,
+      "show_hour|Mall": 1.0,
+      "screen_seats|City Centre": 1.019,
+      "screen_seats|Highway": 1.014,
+      "screen_seats|Mall": 0.978,
+      "distance_to_metro_km|City Centre": 0.994,
+      "distance_to_metro_km|Highway": 1.022,
+      "distance_to_metro_km|Mall": 0.99
+    }
+  },
+  "sentinel_value": {
+    "present": true,
+    "column": "days_since_release",
+    "value": 9999,
+    "count": 65,
+    "all_hits": [
+      {
+        "column": "days_since_release",
+        "value": 9999,
+        "count": 65
+      }
+    ]
+  },
+  "duplicate_rows": {
+    "present": true,
+    "count": 44,
+    "extra_copies_ignoring_record_id": 44
+  },
+  "stuck_sensor": {
+    "present": false,
+    "column": null,
+    "start_date": null,
+    "end_date": null,
+    "runs": [],
+    "longest_run_per_column": {
+      "ticket_price_rs": 2,
+      "days_since_release": 3,
+      "star_rating": 3,
+      "show_hour": 3,
+      "screen_seats": 2,
+      "distance_to_metro_km": 3
+    }
+  },
+  "target_typos": {
+    "present": false,
+    "count": null,
+    "largest_gap_in_upper_half": 1.5,
+    "max_value": 100.0,
+    "rows_above_100": 0
+  },
+  "spelling_variants": {
+    "present": true,
+    "column": "language",
+    "true_levels": 3,
+    "details": {
+      "language": {
+        "raw_levels": {
+          "english": 414,
+          "regional": 287,
+          "hindi": 185,
+          "ENGLISH": 21,
+          "eng.": 16,
+          " english": 13,
+          "english ": 13,
+          "reg.": 12,
+          "hindi ": 12,
+          "Regional": 11,
+          "hin.": 9,
+          "HINDI": 9,
+          " hindi": 8,
+          " regional": 8,
+          "regional ": 8,
+          "English": 7,
+          "REGIONAL": 6,
+          "Hindi": 5
+        },
+        "clean_levels_from_later": [
+          "english",
+          "hindi",
+          "regional"
+        ]
+      },
+      "location": {
+        "raw_levels": {
+          "City Centre": 400,
+          "Mall": 388,
+          "Highway": 256
+        },
+        "clean_levels_from_later": [
+          "City Centre",
+          "Highway",
+          "Mall"
+        ]
+      }
+    }
+  }
+}

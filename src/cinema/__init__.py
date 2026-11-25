@@ -1,0 +1,1 @@
+"""Cinema Show Occupancy (MP152) MLOps pipeline."""

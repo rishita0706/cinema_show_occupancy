@@ -1,0 +1,25 @@
+paths:
+  train: data/raw/train.csv
+  later: data/raw/later.csv
+  holdout: data/raw/holdout_features.csv
+  reports_dir: reports
+  data_issues_report: reports/data_issues_report.json
+target: occupancy_pct
+group_column: location
+date_column: date
+numeric_features:
+  - ticket_price_rs
+  - days_since_release
+  - star_rating
+  - show_hour
+  - screen_seats
+  - distance_to_metro_km
+categorical_features:
+  - language
+  - location
+data_checks:
+  sentinel_candidates: [-1, -9, -99, -999, -9999, 99, 999, 9999]
+  min_sentinel_count: 5
+  stuck_min_run: 15
+  leak_corr_threshold: 0.95
+  unit_factors: [10, 12, 60, 100, 1000]
