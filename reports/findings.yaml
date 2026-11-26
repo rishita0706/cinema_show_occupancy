@@ -41,23 +41,23 @@ tracking:
   experiment_name: cinema_show_occupancy
   best_run_id: db64c689944d4b84a9212250b2104127        # the MLflow run id of your v1 model
   registered_model_name: cinema_occupancy_model
-  champion_version: 1
+  champion_version: 2
 
 monitoring:
   psi:                     # cleaned train.csv vs later.csv, 10 bins
-    ticket_price_rs: null
-    days_since_release: null
-    star_rating: null
-    show_hour: null
-    screen_seats: null
-    distance_to_metro_km: null
-  most_drifted_feature: null
+    ticket_price_rs: 0.0889
+    days_since_release: 0.0674
+    star_rating: 0.0268
+    show_hour: 0.0516
+    screen_seats: 0.0523
+    distance_to_metro_km: 3.3852
+  most_drifted_feature: distance_to_metro_km
   mae_by_group:            # v1 on later.csv, per value of location
-    'City Centre': null
-    'Mall': null
-    'Highway': null
-  worst_served_group: null
-  mae_v1_on_check: null    # v1 on the last 30% of later.csv (by date)
-  mae_v2_on_check: null    # v2 on the same rows
-  decision: null           # promote or keep
+    'City Centre': 13.4030
+    'Mall': 6.0253
+    'Highway': 5.5674
+  worst_served_group: City Centre
+  mae_v1_on_check: 7.6996    # v1 on the last 30% of later.csv (by date)
+  mae_v2_on_check: 6.6739    # v2 on the same rows
+  decision: promote           # promote or keep
   

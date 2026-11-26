@@ -1,0 +1,25 @@
+{
+  "psi": {
+    "ticket_price_rs": 0.0889,
+    "days_since_release": 0.0674,
+    "star_rating": 0.0268,
+    "show_hour": 0.0516,
+    "screen_seats": 0.0523,
+    "distance_to_metro_km": 3.3852
+  },
+  "most_drifted_feature": "distance_to_metro_km",
+  "mae_by_group": {
+    "City Centre": 13.403,
+    "Highway": 5.5674,
+    "Mall": 6.0253
+  },
+  "worst_served_group": "City Centre",
+  "rows_check": 90,
+  "rows_v2_training": 1210,
+  "mae_v1_on_check": 7.6996,
+  "mae_v2_on_check": 6.6739,
+  "gain_pct": 13.32,
+  "decision": "promote",
+  "champion_version": 2,
+  "v2_run_id": "cd8f486e003f41f8956368a06718892e"
+}
