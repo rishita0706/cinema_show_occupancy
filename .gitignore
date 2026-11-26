@@ -22,8 +22,8 @@ env/
 # .ipynb_checkpoints/
 
 # MLflow local artifact storage
-# mlruns/
-# mlartifacts/
+mlruns/
+mlartifacts/
 
 # DVC cache
 .dvc/cache/

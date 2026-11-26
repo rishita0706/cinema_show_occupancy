@@ -23,3 +23,12 @@ data_checks:
   stuck_min_run: 15
   leak_corr_threshold: 0.95
   unit_factors: [10, 12, 60, 100, 1000]
+mlflow:
+  tracking_uri: sqlite:///mlflow.db
+  experiment_name: cinema_show_occupancy
+  registered_model_name: cinema_occupancy_model
+  artifact_dir: mlartifacts
+  model_export_path: models/model.joblib
+training:
+  random_state: 42
+  cv_folds: 5

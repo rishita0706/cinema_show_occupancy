@@ -38,10 +38,10 @@ data_issues:
     true_levels: 3              # how many real categories there are after cleaning
 
 tracking:
-  experiment_name: null
-  best_run_id: null        # the MLflow run id of your v1 model
-  registered_model_name: null
-  champion_version: null
+  experiment_name: cinema_show_occupancy
+  best_run_id: db64c689944d4b84a9212250b2104127        # the MLflow run id of your v1 model
+  registered_model_name: cinema_occupancy_model
+  champion_version: 1
 
 monitoring:
   psi:                     # cleaned train.csv vs later.csv, 10 bins
