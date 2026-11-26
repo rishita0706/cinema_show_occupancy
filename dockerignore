@@ -1,0 +1,25 @@
+# things the container does not need
+.git
+.github
+.venv
+.dvc
+.vscode
+__pycache__
+*.pyc
+.pytest_cache
+
+# data is tracked by DVC, never put it in the image
+data
+reports
+predictions
+
+# MLflow files (the model is copied from models/ instead)
+mlflow.db
+mlartifacts
+mlruns
+
+# docs and tests
+tests
+scripts
+*.md
+k8s
